@@ -8,6 +8,13 @@ import AboutPage from "./pages/About";
 import ServicesPage from "./pages/Services";
 import ContactPage from "./pages/Contact";
 import NotFound from "./pages/NotFound";
+import SmartphonesWearables from "./pages/SmartphonesWearables";
+import GamingEntertainment from "./pages/GamingEntertainment";
+import SmartHome from "./pages/SmartHome";
+import LaptopsComputing from "./pages/LaptopsComputing";
+import PowerTools from "./pages/PowerTools";
+import MetalDetectors from "./pages/MetalDetectors";
+import AudioAccessories from "./pages/AudioAccessories";
 
 const queryClient = new QueryClient();
 
@@ -22,6 +29,13 @@ const App = () => (
           <Route path="/about" element={<AboutPage />} />
           <Route path="/services" element={<ServicesPage />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="/smartphones-wearables" element={<SmartphonesWearables />} />
+          <Route path="/gaming-entertainment" element={<GamingEntertainment />} />
+          <Route path="/smart-home" element={<SmartHome />} />
+          <Route path="/laptops-computing" element={<LaptopsComputing />} />
+          <Route path="/power-tools" element={<PowerTools />} />
+          <Route path="/metal-detectors" element={<MetalDetectors />} />
+          <Route path="/audio-accessories" element={<AudioAccessories />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
