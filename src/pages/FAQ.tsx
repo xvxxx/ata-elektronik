@@ -2,6 +2,8 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { HelpCircle, Phone, Mail, MessageCircle } from "lucide-react";
+import Navigation from '@/components/Navigation';
+import Footer from '@/components/Footer';
 
 const FAQ = () => {
   const faqs = [
@@ -48,72 +50,78 @@ const FAQ = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-background pt-20">
-      <div className="container mx-auto px-4 py-16">
-        <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 font-orbitron bg-gradient-primary bg-clip-text text-transparent">
-            Frequently Asked Questions
-          </h1>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Find answers to common questions about our products, services, and ordering process
-          </p>
-        </div>
+    <div className="min-h-screen bg-background">
+      <Navigation />
+      
+      <div className="pt-20">
+        <div className="container mx-auto px-4 py-16">
+          <div className="text-center mb-16">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 font-orbitron bg-gradient-primary bg-clip-text text-transparent">
+              Frequently Asked Questions
+            </h1>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+              Find answers to common questions about our products, services, and ordering process
+            </p>
+          </div>
 
-        <div className="max-w-4xl mx-auto">
-          <Card className="glass-card border-primary/20 mb-8">
-            <CardContent className="p-8">
-              <Accordion type="single" collapsible className="w-full">
-                {faqs.map((faq, index) => (
-                  <AccordionItem key={index} value={`item-${index}`} className="border-primary/20">
-                    <AccordionTrigger className="text-left hover:text-primary transition-colors py-6">
-                      <div className="flex items-center space-x-3">
-                        <HelpCircle className="h-5 w-5 text-primary flex-shrink-0" />
-                        <span className="font-medium">{faq.question}</span>
-                      </div>
-                    </AccordionTrigger>
-                    <AccordionContent className="text-muted-foreground leading-relaxed pt-2 pb-6 pl-8">
-                      {faq.answer}
-                    </AccordionContent>
-                  </AccordionItem>
-                ))}
-              </Accordion>
-            </CardContent>
-          </Card>
+          <div className="max-w-4xl mx-auto">
+            <Card className="glass-card border-primary/20 mb-8">
+              <CardContent className="p-8">
+                <Accordion type="single" collapsible className="w-full">
+                  {faqs.map((faq, index) => (
+                    <AccordionItem key={index} value={`item-${index}`} className="border-primary/20">
+                      <AccordionTrigger className="text-left hover:text-primary transition-colors py-6">
+                        <div className="flex items-center space-x-3">
+                          <HelpCircle className="h-5 w-5 text-primary flex-shrink-0" />
+                          <span className="font-medium">{faq.question}</span>
+                        </div>
+                      </AccordionTrigger>
+                      <AccordionContent className="text-muted-foreground leading-relaxed pt-2 pb-6 pl-8">
+                        {faq.answer}
+                      </AccordionContent>
+                    </AccordionItem>
+                  ))}
+                </Accordion>
+              </CardContent>
+            </Card>
 
-          {/* Contact Support */}
-          <Card className="glass-card border-primary/20">
-            <CardHeader>
-              <CardTitle className="text-2xl font-orbitron text-center">Still Have Questions?</CardTitle>
-            </CardHeader>
-            <CardContent className="text-center">
-              <p className="text-muted-foreground mb-6">
-                Our expert team is ready to help you with any questions about electronic components, 
-                orders, or technical support.
-              </p>
-              <div className="grid md:grid-cols-3 gap-4">
-                <Button variant="outline" className="flex items-center space-x-2 p-6" asChild>
-                  <a href="tel:+4915215738607">
-                    <Phone className="h-5 w-5" />
-                    <span>Call Sales</span>
-                  </a>
-                </Button>
-                <Button variant="outline" className="flex items-center space-x-2 p-6" asChild>
-                  <a href="mailto:sales@ata-elektronik.de">
-                    <Mail className="h-5 w-5" />
-                    <span>Email Us</span>
-                  </a>
-                </Button>
-                <Button variant="outline" className="flex items-center space-x-2 p-6" asChild>
-                  <a href="/contact">
-                    <MessageCircle className="h-5 w-5" />
-                    <span>Contact Form</span>
-                  </a>
-                </Button>
-              </div>
-            </CardContent>
-          </Card>
+            {/* Contact Support */}
+            <Card className="glass-card border-primary/20">
+              <CardHeader>
+                <CardTitle className="text-2xl font-orbitron text-center">Still Have Questions?</CardTitle>
+              </CardHeader>
+              <CardContent className="text-center">
+                <p className="text-muted-foreground mb-6">
+                  Our expert team is ready to help you with any questions about electronic components, 
+                  orders, or technical support.
+                </p>
+                <div className="grid md:grid-cols-3 gap-4">
+                  <Button variant="outline" className="flex items-center space-x-2 p-6" asChild>
+                    <a href="tel:+4915215738607">
+                      <Phone className="h-5 w-5" />
+                      <span>Call Sales</span>
+                    </a>
+                  </Button>
+                  <Button variant="outline" className="flex items-center space-x-2 p-6" asChild>
+                    <a href="mailto:sales@ata-elektronik.de">
+                      <Mail className="h-5 w-5" />
+                      <span>Email Us</span>
+                    </a>
+                  </Button>
+                  <Button variant="outline" className="flex items-center space-x-2 p-6" asChild>
+                    <a href="/contact">
+                      <MessageCircle className="h-5 w-5" />
+                      <span>Contact Form</span>
+                    </a>
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
         </div>
       </div>
+      
+      <Footer />
     </div>
   );
 };
