@@ -15,6 +15,8 @@ import LaptopsComputing from "./pages/LaptopsComputing";
 import PowerTools from "./pages/PowerTools";
 import MetalDetectors from "./pages/MetalDetectors";
 import AudioAccessories from "./pages/AudioAccessories";
+import FAQ from "./pages/FAQ";
+import PaymentMethods from "./pages/PaymentMethods";
 
 const queryClient = new QueryClient();
 
@@ -36,6 +38,8 @@ const App = () => (
           <Route path="/power-tools" element={<PowerTools />} />
           <Route path="/metal-detectors" element={<MetalDetectors />} />
           <Route path="/audio-accessories" element={<AudioAccessories />} />
+          <Route path="/faq" element={<FAQ />} />
+          <Route path="/payment-methods" element={<PaymentMethods />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

@@ -22,6 +22,7 @@ const Navigation = () => {
     { name: 'About', href: '/about' },
     { name: 'Services', href: '/services' },
     { name: 'Contact', href: '/contact' },
+    { name: 'FAQ', href: '/faq' },
   ];
 
   const isActive = (path: string) => location.pathname === path;
@@ -41,14 +42,10 @@ const Navigation = () => {
             to="/"
             className="flex items-center space-x-3 group"
           >
-            <div className="relative">
-              <Zap className="h-8 w-8 text-primary transition-all duration-300 group-hover:scale-110 group-hover:text-accent" />
-              <div className="absolute inset-0 bg-primary/20 rounded-full blur-lg scale-150 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-            </div>
             <img 
-              src="/lovable-uploads/600836cf-188f-4c5a-a30a-a300d85d168d.png" 
-              alt="ATA Elektronik" 
-              className="h-8"
+              src="/lovable-uploads/ata-logo.png" 
+              alt="ATA Elektronik GmbH" 
+              className="h-10 w-auto"
             />
           </Link>
 

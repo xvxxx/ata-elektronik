@@ -52,26 +52,26 @@ const ContactPage = () => {
       title: 'Main Office',
       details: [
         'ATA Elektronik GmbH',
-        'Musterstraße 123',
-        '12345 Berlin, Germany'
+        'Berliner Str. 150',
+        '42277 Wuppertal, Germany'
       ]
     },
     {
       icon: Phone,
       title: 'Phone Support',
       details: [
-        '+49 (0) 30 12345678',
-        '+49 (0) 30 12345679 (Sales)',
-        '+49 (0) 30 12345680 (Technical)'
+        '+49 152 192 115 12',
+        '+49 152 157 386 07 (Sales)',
+        'Fax: +49 152 157 489 63'
       ]
     },
     {
       icon: Mail,
       title: 'Email Contacts',
       details: [
-        'info@ata-elektronik.de',
         'sales@ata-elektronik.de',
-        'support@ata-elektronik.de'
+        'Website: www.ata-elektronik.de',
+        'Reg. No: HRB 27924, TIN: DE 20716716'
       ]
     },
     {

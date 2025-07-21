@@ -84,12 +84,12 @@ const AboutPage = () => {
               25+ Years of Excellence
             </Badge>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground mb-6">
-              Leading the Future of{' '}
-              <span className="gradient-text">Electronic Innovation</span>
+              About{' '}
+              <span className="gradient-text">ATA Elektronik GmbH</span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-              Since 1998, ATA Elektronik GmbH has been at the forefront of electronic component distribution, 
-              serving as a trusted partner for businesses across Europe with innovative solutions and unwavering commitment to excellence.
+              ATA Elektronik GmbH is a leading German supplier of high-quality electronic components, catering to a wide range of industries across Europe. 
+              Based in Wuppertal, Germany, we specialize in providing advanced electronic solutions that power innovation.
             </p>
           </div>
         </div>
@@ -105,19 +105,25 @@ const AboutPage = () => {
                   Our Mission
                 </h2>
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  To be the most trusted partner for businesses across Europe by delivering exceptional electronic components 
-                  that drive innovation, enhance performance, and create sustainable value. We are committed to fostering 
-                  technological advancement through reliable solutions and expert guidance.
+                  At ATA Elektronik GmbH, our mission is to be the trusted partner for businesses across Europe by offering top-tier 
+                  electronic components that enhance performance, innovation, and sustainability. We strive to meet the evolving needs 
+                  of the modern world with cutting-edge technologies, providing our clients with the most reliable and efficient 
+                  solutions for their electronic systems.
                 </p>
               </div>
               
               <div>
                 <h2 className="text-3xl font-display font-bold text-foreground mb-4">
-                  Our Vision
+                  Global Partnerships and Expertise
                 </h2>
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  To shape the future of technology by connecting innovative electronic solutions with visionary companies, 
-                  enabling breakthrough innovations that improve lives and drive progress across industries worldwide.
+                  We work with globally recognized manufacturers and industry leaders to ensure that we bring the best products to our customers. 
+                  Our extensive network of partners includes some of the most innovative brands in the electronics industry, allowing us to supply 
+                  state-of-the-art components and solutions that meet the highest standards.
+                </p>
+                <p className="text-lg text-muted-foreground leading-relaxed mt-4">
+                  Our expert team, equipped with deep industry knowledge, is dedicated to supporting clients with tailored solutions and advice 
+                  on integrating the latest technology into their systems. We focus on building long-term relationships based on trust, quality, and performance.
                 </p>
               </div>
             </div>
