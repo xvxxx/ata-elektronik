@@ -19,10 +19,10 @@ const Navigation = () => {
 
   const navigation = [
     { name: 'Home', href: '/' },
-    { name: 'About', href: '/about' },
-    { name: 'Services', href: '/services' },
-    { name: 'Contact', href: '/contact' },
-    { name: 'FAQ', href: '/faq' },
+    { name: 'About', href: '/about.html' },
+    { name: 'Services', href: '/services.html' },
+    { name: 'Contact', href: '/contact.html' },
+    { name: 'FAQ', href: '/faq.html' },
   ];
 
   const isActive = (path: string) => location.pathname === path;

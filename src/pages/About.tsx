@@ -175,42 +175,51 @@ const AboutPage = () => {
         </div>
       </section>
 
-      {/* Company Timeline */}
+      {/* Product Categories */}
       <section className="py-20 bg-card border-y border-border">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
-              Our <span className="gradient-text">Journey</span>
+              Product <span className="gradient-text">Categories</span>
             </h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              Key milestones that have shaped our growth and established our position as a leading electronic components supplier.
+              We offer a broad portfolio of electronic products, carefully curated to meet the demands of both industrial professionals and tech enthusiasts. Our products span across various categories:
             </p>
           </div>
 
-          <div className="relative">
-            <div className="absolute left-4 md:left-1/2 transform md:-translate-x-1/2 h-full w-1 bg-tech-gradient rounded-full" />
-            
-            <div className="space-y-12">
-              {milestones.map((milestone, index) => (
-                <div key={index} className={`flex items-center ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'}`}>
-                  <div className={`flex-1 ${index % 2 === 0 ? 'md:text-right md:pr-8' : 'md:text-left md:pl-8'}`}>
-                    <div className="ml-12 md:ml-0">
-                      <div className="inline-block px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-primary font-semibold mb-2">
-                        {milestone.year}
-                      </div>
-                      <h3 className="text-xl font-display font-semibold text-foreground mb-2">
-                        {milestone.title}
-                      </h3>
-                      <p className="text-muted-foreground leading-relaxed">
-                        {milestone.description}
-                      </p>
-                    </div>
-                  </div>
-                  
-                  <div className="absolute left-0 w-8 h-8 bg-primary rounded-full border-4 border-background md:left-1/2 md:transform md:-translate-x-1/2" />
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {[
+              { name: 'Smartphones & Wearables', image: 'https://ata-elektronik.de/img/smart.jpg', link: '/smartphones-wearables.html' },
+              { name: 'Home Entertainment & Gaming', image: 'https://ata-elektronik.de/img/gaming.jpg', link: '/gaming-entertainment.html' },
+              { name: 'Smart Home & Appliances', image: 'https://ata-elektronik.de/img/appliances.jpg', link: '/smart-home.html' },
+              { name: 'Laptops & Computing', image: 'https://ata-elektronik.de/img/computers.jpg', link: '/laptops-computing.html' },
+              { name: 'Power Tools', image: 'https://ata-elektronik.de/img/tools.jpg', link: '/power-tools.html' },
+              { name: 'Metal Detector', image: 'https://ata-elektronik.de/img/detector.jpg', link: '/metal-detectors.html' },
+              { name: 'Audio & Accessories', image: 'https://ata-elektronik.de/img/audio.jpg', link: '/audio-accessories.html' }
+            ].map((category, index) => (
+              <Card key={index} className="group glow-hover border-primary/10 hover:border-primary/30 overflow-hidden">
+                <div className="relative aspect-video overflow-hidden">
+                  <img
+                    src={category.image}
+                    alt={category.name}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-tech-gradient opacity-0 group-hover:opacity-20 transition-opacity duration-300" />
                 </div>
-              ))}
-            </div>
+                <CardContent className="p-6 text-center">
+                  <h3 className="text-lg font-display font-semibold text-foreground mb-4">
+                    {category.name}
+                  </h3>
+                  <Button 
+                    variant="outline" 
+                    className="border-primary/20 hover:border-primary/40 text-primary hover:bg-primary/10"
+                    onClick={() => window.location.href = category.link}
+                  >
+                    View Products
+                  </Button>
+                </CardContent>
+              </Card>
+            ))}
           </div>
         </div>
       </section>

@@ -25,10 +25,27 @@ const ContactPage = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    
+    // Send email to sales@ata-elektronik.de
+    const emailBody = `
+Name: ${formData.name}
+Email: ${formData.email}
+Company: ${formData.company}
+Phone: ${formData.phone}
+Subject: ${formData.subject}
+
+Message:
+${formData.message}
+    `;
+    
+    const mailtoLink = `mailto:sales@ata-elektronik.de?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(emailBody)}`;
+    window.location.href = mailtoLink;
+    
     toast({
-      title: 'Message Sent Successfully!',
-      description: 'Thank you for contacting us. We will respond within 24 hours.',
+      title: 'Email client opened!',
+      description: 'Please send the email to complete your inquiry.',
     });
+    
     setFormData({
       name: '',
       email: '',
@@ -151,6 +168,9 @@ const ContactPage = () => {
             <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
               Ready to discuss your electronic component needs? Our experienced team is here to provide 
               expert guidance, technical support, and customized solutions for your projects.
+            </p>
+            <p className="text-lg text-muted-foreground max-w-3xl mx-auto mt-4">
+              <strong>Distribution Outlets:</strong> Germany, France, Poland, Portugal, Denmark and Netherlands
             </p>
           </div>
         </div>
@@ -362,23 +382,22 @@ const ContactPage = () => {
           </div>
 
           <div className="grid lg:grid-cols-2 gap-16 items-start">
-            {/* Map Placeholder */}
+            {/* Interactive Map */}
             <div className="relative h-96 bg-muted rounded-2xl overflow-hidden border border-primary/10">
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-center">
-                  <MapPin className="w-16 h-16 text-primary mx-auto mb-4" />
-                  <h3 className="text-xl font-display font-semibold text-foreground mb-2">
-                    Interactive Map
-                  </h3>
-                  <p className="text-muted-foreground">
-                    Berlin, Germany - Headquarters
-                  </p>
-                  <Button className="mt-4 btn-tech">
-                    View on Google Maps
-                  </Button>
-                </div>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2491.7456479234567!2d7.2083333!3d51.2666667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b8c8b8b8b8b8b8%3A0x8b8b8b8b8b8b8b8b!2sBerliner%20Str.%20150%2C%2042277%20Wuppertal%2C%20Germany!5e0!3m2!1sen!2sus!4v1234567890123"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                className="rounded-2xl"
+              />
+              <div className="absolute bottom-4 left-4 bg-background/90 backdrop-blur-sm px-3 py-2 rounded-lg">
+                <p className="text-sm font-medium">ATA Elektronik GmbH</p>
+                <p className="text-xs text-muted-foreground">Berliner Str. 150, 42277 Wuppertal</p>
               </div>
-              <div className="absolute inset-0 bg-tech-gradient opacity-5" />
             </div>
 
             {/* Office Locations */}

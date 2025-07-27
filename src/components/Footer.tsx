@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin, Linkedin, Twitter, Facebook, Zap } from 'lucide-react';
+import { Mail, Phone, MapPin, Zap } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
@@ -26,9 +26,9 @@ const Footer = () => {
   };
 
   const socialLinks = [
-    { name: 'LinkedIn', icon: Linkedin, href: '#' },
-    { name: 'Twitter', icon: Twitter, href: '#' },
-    { name: 'Facebook', icon: Facebook, href: '#' },
+    { name: 'Call', icon: Phone, href: 'tel:+4915215738607' },
+    { name: 'Email', icon: Mail, href: 'mailto:sales@ata-elektronik.de' },
+    { name: 'WhatsApp', icon: Phone, href: 'https://wa.me/4915215738607' },
   ];
 
   return (
@@ -58,15 +58,15 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center space-x-3 text-sm text-muted-foreground">
                 <MapPin className="h-4 w-4 text-primary" />
-                <span>Musterstraße 123, 12345 Berlin, Germany</span>
+                <span>Berliner Str. 150, 42277 Wuppertal, Germany</span>
               </div>
               <div className="flex items-center space-x-3 text-sm text-muted-foreground">
                 <Phone className="h-4 w-4 text-primary" />
-                <span>+49 (0) 30 12345678</span>
+                <span>+49 152 157 386 07</span>
               </div>
               <div className="flex items-center space-x-3 text-sm text-muted-foreground">
                 <Mail className="h-4 w-4 text-primary" />
-                <span>info@ata-elektronik.de</span>
+                <span>sales@ata-elektronik.de</span>
               </div>
             </div>
 

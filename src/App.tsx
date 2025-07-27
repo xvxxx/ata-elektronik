@@ -17,6 +17,7 @@ import MetalDetectors from "./pages/MetalDetectors";
 import AudioAccessories from "./pages/AudioAccessories";
 import FAQ from "./pages/FAQ";
 import PaymentMethods from "./pages/PaymentMethods";
+import CollectionAgents from "./pages/CollectionAgents";
 
 const queryClient = new QueryClient();
 
@@ -28,18 +29,19 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/about" element={<AboutPage />} />
-          <Route path="/services" element={<ServicesPage />} />
-          <Route path="/contact" element={<ContactPage />} />
-          <Route path="/smartphones-wearables" element={<SmartphonesWearables />} />
-          <Route path="/gaming-entertainment" element={<GamingEntertainment />} />
-          <Route path="/smart-home" element={<SmartHome />} />
-          <Route path="/laptops-computing" element={<LaptopsComputing />} />
-          <Route path="/power-tools" element={<PowerTools />} />
-          <Route path="/metal-detectors" element={<MetalDetectors />} />
-          <Route path="/audio-accessories" element={<AudioAccessories />} />
-          <Route path="/faq" element={<FAQ />} />
-          <Route path="/payment-methods" element={<PaymentMethods />} />
+          <Route path="/about.html" element={<AboutPage />} />
+          <Route path="/services.html" element={<ServicesPage />} />
+          <Route path="/contact.html" element={<ContactPage />} />
+          <Route path="/smartphones-wearables.html" element={<SmartphonesWearables />} />
+          <Route path="/gaming-entertainment.html" element={<GamingEntertainment />} />
+          <Route path="/smart-home.html" element={<SmartHome />} />
+          <Route path="/laptops-computing.html" element={<LaptopsComputing />} />
+          <Route path="/power-tools.html" element={<PowerTools />} />
+          <Route path="/metal-detectors.html" element={<MetalDetectors />} />
+          <Route path="/audio-accessories.html" element={<AudioAccessories />} />
+          <Route path="/faq.html" element={<FAQ />} />
+          <Route path="/payment-methods.html" element={<PaymentMethods />} />
+          <Route path="/collection-agents.html" element={<CollectionAgents />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
