@@ -18,6 +18,9 @@ import AudioAccessories from "./pages/AudioAccessories";
 import FAQ from "./pages/FAQ";
 import PaymentMethods from "./pages/PaymentMethods";
 import CollectionAgents from "./pages/CollectionAgents";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsOfService from "./pages/TermsOfService";
+import CookiePolicy from "./pages/CookiePolicy";
 
 const queryClient = new QueryClient();
 
@@ -42,6 +45,9 @@ const App = () => (
           <Route path="/faq.html" element={<FAQ />} />
           <Route path="/payment-methods.html" element={<PaymentMethods />} />
           <Route path="/collection-agents.html" element={<CollectionAgents />} />
+          <Route path="/privacy-policy.html" element={<PrivacyPolicy />} />
+          <Route path="/terms-of-service.html" element={<TermsOfService />} />
+          <Route path="/cookie-policy.html" element={<CookiePolicy />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

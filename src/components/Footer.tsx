@@ -145,15 +145,15 @@ const Footer = () => {
             </div>
             
             <div className="flex space-x-6 text-sm text-muted-foreground">
-              <a href="#" className="hover:text-primary transition-colors duration-200">
+              <Link to="/privacy-policy.html" className="hover:text-primary transition-colors duration-200">
                 Privacy Policy
-              </a>
-              <a href="#" className="hover:text-primary transition-colors duration-200">
+              </Link>
+              <Link to="/terms-of-service.html" className="hover:text-primary transition-colors duration-200">
                 Terms of Service
-              </a>
-              <a href="#" className="hover:text-primary transition-colors duration-200">
+              </Link>
+              <Link to="/cookie-policy.html" className="hover:text-primary transition-colors duration-200">
                 Cookie Policy
-              </a>
+              </Link>
             </div>
           </div>
         </div>
