@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - ATA Elektronik GmbH</title>
+    <meta name="description" content="Learn about ATA Elektronik GmbH - Leading German supplier of electronic components with over 25 years of experience serving European markets.">
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation (same as index.html) -->
+    <nav id="navbar" class="fixed top-0 w-full z-50 transition-all duration-500">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="index.html" class="flex items-center space-x-3 group">
+                    <img src="img/ata-logo.png" alt="ATA Elektronik GmbH" class="h-10 w-auto">
+                </a>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="about.html" class="nav-link active">About</a>
+                    <a href="services.html" class="nav-link">Services</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                    <a href="faq.html" class="nav-link">FAQ</a>
+                    <button class="btn btn-outline">Get Quote</button>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-toggle" class="btn-icon">
+                        <svg class="menu-icon" width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                        <svg class="close-icon hidden" width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div id="mobile-menu" class="hidden md:hidden glass border-t border-border backdrop-blur-xl">
+                <div class="px-2 pt-2 pb-3 space-y-1">
+                    <a href="index.html" class="mobile-nav-link">Home</a>
+                    <a href="about.html" class="mobile-nav-link active">About</a>
+                    <a href="services.html" class="mobile-nav-link">Services</a>
+                    <a href="contact.html" class="mobile-nav-link">Contact</a>
+                    <a href="faq.html" class="mobile-nav-link">FAQ</a>
+                    <div class="pt-4 pb-2">
+                        <button class="btn btn-primary w-full">Get Quote</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="pt-20">
+        <!-- Hero Section -->
+        <section class="py-16 bg-gradient-to-br from-primary/5 via-background to-primary/5">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h1 class="text-4xl md:text-5xl font-bold gradient-text mb-6">About ATA Elektronik GmbH</h1>
+                <p class="text-xl text-muted-foreground max-w-2xl mx-auto">
+                    Leading German supplier of high-quality electronic components, serving industries across Europe with innovative solutions and exceptional customer service.
+                </p>
+            </div>
+        </section>
+
+        <!-- Mission & Vision -->
+        <section class="py-16 bg-background">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h2 class="text-3xl font-bold mb-6">Our Mission</h2>
+                        <p class="text-lg text-muted-foreground mb-8 leading-relaxed">
+                            To provide innovative electronic solutions that empower businesses across Europe to achieve their technological goals. We are committed to delivering excellence through quality products, reliable service, and technical expertise.
+                        </p>
+                        <div class="space-y-4">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-2 h-2 bg-primary rounded-full"></div>
+                                <span>Quality-first approach in all our products</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <div class="w-2 h-2 bg-primary rounded-full"></div>
+                                <span>Customer-centric service and support</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <div class="w-2 h-2 bg-primary rounded-full"></div>
+                                <span>Innovation-driven solutions</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="img/team-image.jpg" alt="ATA Elektronik Team" class="w-full rounded-xl shadow-lg">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Core Values -->
+        <section class="py-16 bg-card">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">Core Values</h2>
+                    <p class="text-xl text-muted-foreground max-w-3xl mx-auto">
+                        Our values guide everything we do and define who we are as a company
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <h3>Quality Excellence</h3>
+                        <p>We maintain the highest standards in product quality and service delivery</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                            </svg>
+                        </div>
+                        <h3>Customer Focus</h3>
+                        <p>Our customers' success is our priority, driving all our business decisions</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                            </svg>
+                        </div>
+                        <h3>Innovation</h3>
+                        <p>We embrace new technologies and continuously improve our solutions</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9v-9m0-9v9"/>
+                            </svg>
+                        </div>
+                        <h3>Reliability</h3>
+                        <p>We build lasting partnerships through consistent and dependable service</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064"/>
+                            </svg>
+                        </div>
+                        <h3>Global Perspective</h3>
+                        <p>We understand diverse markets and adapt to local needs across Europe</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"/>
+                            </svg>
+                        </div>
+                        <h3>Integrity</h3>
+                        <p>We conduct business with transparency, honesty, and ethical standards</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Categories -->
+        <section class="py-16 bg-background">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold gradient-text mb-6">Product Categories</h2>
+                    <p class="text-xl text-muted-foreground max-w-3xl mx-auto">
+                        We offer a broad portfolio of electronic products, carefully curated to meet the demands of both industrial professionals and tech enthusiasts. Our products span across various categories:
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="product-card">
+                        <img src="img/smart.jpg" alt="Smartphones & Wearables" class="product-image">
+                        <div class="product-content">
+                            <h3>1. Smartphones & Wearables</h3>
+                            <p>Latest mobile technology and wearable devices for modern connectivity</p>
+                            <a href="smartphones-wearables.html" class="btn btn-outline btn-sm">Learn More</a>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="img/gaming.jpg" alt="Home Entertainment & Gaming" class="product-image">
+                        <div class="product-content">
+                            <h3>2. Home Entertainment & Gaming</h3>
+                            <p>Gaming consoles, VR systems, and entertainment devices</p>
+                            <a href="gaming-entertainment.html" class="btn btn-outline btn-sm">Learn More</a>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="img/appliances.jpg" alt="Smart Home & Appliances" class="product-image">
+                        <div class="product-content">
+                            <h3>3. Smart Home & Appliances</h3>
+                            <p>IoT devices and smart home automation systems</p>
+                            <a href="smart-home.html" class="btn btn-outline btn-sm">Learn More</a>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="img/computers.jpg" alt="Laptops & Computing" class="product-image">
+                        <div class="product-content">
+                            <h3>4. Laptops & Computing</h3>
+                            <p>Professional computing solutions and components</p>
+                            <a href="laptops-computing.html" class="btn btn-outline btn-sm">Learn More</a>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="img/tools.jpg" alt="Power Tools" class="product-image">
+                        <div class="product-content">
+                            <h3>5. Power Tools</h3>
+                            <p>Professional-grade power tools and equipment</p>
+                            <a href="power-tools.html" class="btn btn-outline btn-sm">Learn More</a>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="img/detector.jpg" alt="Metal Detector" class="product-image">
+                        <div class="product-content">
+                            <h3>6. Metal Detector</h3>
+                            <p>Advanced metal detection technology</p>
+                            <a href="metal-detectors.html" class="btn btn-outline btn-sm">Learn More</a>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="img/audio.jpg" alt="Audio & Accessories" class="product-image">
+                        <div class="product-content">
+                            <h3>7. Audio & Accessories</h3>
+                            <p>High-quality audio equipment and accessories</p>
+                            <a href="audio-accessories.html" class="btn btn-outline btn-sm">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Company Stats -->
+        <section class="py-16 bg-card">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">Our Impact</h2>
+                    <p class="text-xl text-muted-foreground max-w-3xl mx-auto">
+                        Numbers that reflect our commitment to excellence and growth
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="stat-item">
+                        <div class="stat-icon">
+                            <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <div class="stat-value">25+</div>
+                        <div class="stat-label">Years of Experience</div>
+                    </div>
+
+                    <div class="stat-item">
+                        <div class="stat-icon">
+                            <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064"/>
+                            </svg>
+                        </div>
+                        <div class="stat-value">15+</div>
+                        <div class="stat-label">Countries Served</div>
+                    </div>
+
+                    <div class="stat-item">
+                        <div class="stat-icon">
+                            <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                            </svg>
+                        </div>
+                        <div class="stat-value">1000+</div>
+                        <div class="stat-label">Happy Customers</div>
+                    </div>
+
+                    <div class="stat-item">
+                        <div class="stat-icon">
+                            <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>
+                            </svg>
+                        </div>
+                        <div class="stat-value">10000+</div>
+                        <div class="stat-label">Products Delivered</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Areas of Expertise -->
+        <section class="py-16 bg-background">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold gradient-text mb-6">Areas of Expertise</h2>
+                    <p class="text-xl text-muted-foreground max-w-3xl mx-auto">
+                        Specialized knowledge across multiple industry sectors
+                    </p>
+                </div>
+
+                <div class="flex flex-wrap justify-center gap-4">
+                    <span class="px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-sm font-medium text-primary">Automotive Electronics</span>
+                    <span class="px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-sm font-medium text-primary">Consumer Electronics</span>
+                    <span class="px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-sm font-medium text-primary">Industrial Automation</span>
+                    <span class="px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-sm font-medium text-primary">Telecommunications</span>
+                    <span class="px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-sm font-medium text-primary">Smart Home Technology</span>
+                    <span class="px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-sm font-medium text-primary">Gaming & Entertainment</span>
+                    <span class="px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-sm font-medium text-primary">Mobile Technology</span>
+                    <span class="px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-sm font-medium text-primary">Professional Tools</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-20 bg-primary text-primary-foreground">
+            <div class="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">
+                    Ready to Partner With Us?
+                </h2>
+                <p class="text-xl mb-8 opacity-90">
+                    Join hundreds of satisfied customers across Europe who trust ATA Elektronik for their electronic component needs.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="contact.html" class="btn btn-secondary btn-lg">Get Started Today</a>
+                    <a href="services.html" class="btn btn-outline-white btn-lg">Explore Our Services</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer (same as index.html) -->
+    <footer class="bg-card border-t border-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+                <div class="lg:col-span-2 space-y-6">
+                    <div class="flex items-center space-x-3">
+                        <div class="footer-logo-icon">
+                            <svg width="32" height="32" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                            </svg>
+                        </div>
+                        <span class="text-xl font-bold gradient-text">ATA Elektronik GmbH</span>
+                    </div>
+                    <p class="text-muted-foreground leading-relaxed max-w-md">
+                        Leading German supplier of high-quality electronic components, 
+                        serving industries across Europe with innovative solutions and 
+                        exceptional customer service.
+                    </p>
+                    <div class="space-y-3">
+                        <div class="contact-item">
+                            <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                            </svg>
+                            <span>Berliner Str. 150, 42277 Wuppertal, Germany</span>
+                        </div>
+                        <div class="contact-item">
+                            <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                            </svg>
+                            <span>+49 152 157 386 07</span>
+                        </div>
+                        <div class="contact-item">
+                            <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                            </svg>
+                            <span>sales@ata-elektronik.de</span>
+                        </div>
+                    </div>
+                    <div class="flex space-x-4">
+                        <a href="tel:+4915215738607" class="social-link">
+                            <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                            </svg>
+                        </a>
+                        <a href="mailto:sales@ata-elektronik.de" class="social-link">
+                            <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                            </svg>
+                        </a>
+                        <a href="https://wa.me/4915215738607" class="social-link">
+                            <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="space-y-6">
+                    <h3 class="text-lg font-semibold">Company</h3>
+                    <ul class="space-y-3">
+                        <li><a href="about.html" class="footer-link">About Us</a></li>
+                        <li><a href="services.html" class="footer-link">Our Services</a></li>
+                        <li><a href="#" class="footer-link">Careers</a></li>
+                        <li><a href="#" class="footer-link">News</a></li>
+                    </ul>
+                </div>
+                <div class="space-y-6">
+                    <h3 class="text-lg font-semibold">Products</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="footer-link">Automotive Components</a></li>
+                        <li><a href="#" class="footer-link">Consumer Electronics</a></li>
+                        <li><a href="#" class="footer-link">Industrial Automation</a></li>
+                        <li><a href="#" class="footer-link">Telecommunications</a></li>
+                    </ul>
+                </div>
+                <div class="space-y-6">
+                    <h3 class="text-lg font-semibold">Support</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="footer-link">Technical Support</a></li>
+                        <li><a href="#" class="footer-link">Documentation</a></li>
+                        <li><a href="#" class="footer-link">Quality Assurance</a></li>
+                        <li><a href="#" class="footer-link">Warranty</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="py-6 border-t border-border">
+                <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+                    <div class="text-sm text-muted-foreground">
+                        © 2025 ATA Elektronik GmbH. All rights reserved.
+                    </div>
+                    <div class="flex space-x-6 text-sm text-muted-foreground">
+                        <a href="privacy-policy.html" class="footer-link">Privacy Policy</a>
+                        <a href="terms-of-service.html" class="footer-link">Terms of Service</a>
+                        <a href="cookie-policy.html" class="footer-link">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
