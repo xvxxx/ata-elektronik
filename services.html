@@ -3,328 +3,300 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Services - ATA Elektronik GmbH</title>
+    <title>Professional Services - ATA Elektronik GmbH</title>
     <meta name="description" content="Professional electronic component services including sourcing, technical support, logistics, and customer service across Europe.">
-    <link rel="icon" href="images/favicon.png" type="image/png">
+    <link rel="icon" href="img/favicon.png" type="image/png">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
-    <nav id="navbar" class="fixed top-0 w-full z-50 transition-all duration-500">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-20">
-                <a href="index.html" class="flex items-center space-x-3 group">
-                    <img src="images/ata-logo.png" alt="ATA Elektronik GmbH" class="h-10 w-auto">
-                </a>
-                <div class="hidden md:flex items-center space-x-8">
-                    <a href="index.html" class="nav-link">Home</a>
-                    <a href="about.html" class="nav-link">About</a>
-                    <a href="services.html" class="nav-link active">Services</a>
-                    <a href="contact.html" class="nav-link">Contact</a>
-                    <a href="faq.html" class="nav-link">FAQ</a>
-                    <a href="contact.html" class="btn btn-outline">Get Quote</a>
-                </div>
-                <div class="md:hidden">
-                    <button id="mobile-menu-toggle" class="btn-icon">
-                        <svg class="menu-icon" width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                        </svg>
-                        <svg class="close-icon hidden" width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-                        </svg>
-                    </button>
-                </div>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="img/ata-logo.png" alt="ATA Elektronik GmbH" class="logo">
+            </a>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="services.html" class="nav-link active">Services</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="faq.html" class="nav-link">FAQ</a>
             </div>
-            <div id="mobile-menu" class="hidden md:hidden glass border-t border-border backdrop-blur-xl">
-                <div class="px-2 py-3 space-y-1">
-                    <a href="index.html" class="mobile-nav-link">Home</a>
-                    <a href="about.html" class="mobile-nav-link">About</a>
-                    <a href="services.html" class="mobile-nav-link active">Services</a>
-                    <a href="contact.html" class="mobile-nav-link">Contact</a>
-                    <a href="faq.html" class="mobile-nav-link">FAQ</a>
-                    <div class="py-2">
-                        <a href="contact.html" class="btn btn-primary w-full">Get Quote</a>
-                    </div>
-                </div>
+            <a href="contact.html" class="nav-cta">Get Quote</a>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
+        </div>
+        <div class="mobile-menu">
+            <a href="index.html" class="mobile-link">Home</a>
+            <a href="about.html" class="mobile-link">About</a>
+            <a href="services.html" class="mobile-link">Services</a>
+            <a href="contact.html" class="mobile-link">Contact</a>
+            <a href="faq.html" class="mobile-link">FAQ</a>
+            <a href="contact.html" class="mobile-cta">Get Quote</a>
         </div>
     </nav>
 
-    <main class="pt-20">
-        <!-- Hero Section -->
-        <section class="py-20 bg-gradient-to-br from-primary/5 via-background to-primary/5">
-            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                <h1 class="text-4xl md:text-5xl font-bold gradient-text py-6">Professional Electronic Services</h1>
-                <p class="text-xl text-muted-foreground">
-                    From component sourcing to technical support, we provide end-to-end services that ensure 
-                    your projects succeed with the highest quality electronic solutions and expert guidance.
-                </p>
+    <!-- Hero Section -->
+    <section class="hero services-hero">
+        <div class="hero-content">
+            <div class="badge">Comprehensive Solutions</div>
+            <h1>Professional <span class="gradient-text">Services</span> for Electronic Excellence</h1>
+            <p>From component sourcing to technical support, we provide end-to-end services that ensure your projects succeed with the highest quality electronic solutions and expert guidance.</p>
+        </div>
+    </section>
+
+    <!-- Main Services -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our <span class="gradient-text">Core Services</span></h2>
+                <p>Comprehensive service portfolio designed to meet all your electronic component needs and project requirements.</p>
             </div>
-        </section>
-
-        <!-- Main Services -->
-        <section class="py-20">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center py-16">
-                    <h2 class="text-3xl md:text-4xl font-bold gradient-text py-4">Our Core Services</h2>
-                    <p class="text-lg text-muted-foreground max-w-3xl mx-auto">
-                        Comprehensive service portfolio designed to meet all your electronic component needs and project requirements.
-                    </p>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">⚡</div>
+                    <h3>Component Sourcing & Supply</h3>
+                    <p>Comprehensive sourcing solutions for electronic components across all major categories and specifications.</p>
+                    <ul class="service-features">
+                        <li>Global supplier network access</li>
+                        <li>Real-time inventory tracking</li>
+                        <li>Competitive pricing strategies</li>
+                        <li>Quality verification processes</li>
+                    </ul>
                 </div>
-
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <!-- Component Sourcing -->
-                    <div class="feature-card text-left">
-                        <div class="feature-icon">
-                            <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"/>
-                            </svg>
-                        </div>
-                        <h3>Component Sourcing & Supply</h3>
-                        <p>Comprehensive sourcing solutions for electronic components across all major categories and specifications.</p>
-                        <ul class="space-y-3 py-4">
-                            <li class="flex items-center space-x-2">
-                                <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-                                </svg>
-                                <span class="text-sm text-muted-foreground">Global supplier network access</span>
-                            </li>
-                            <li class="flex items-center space-x-2">
-                                <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-                                </svg>
-                                <span class="text-sm text-muted-foreground">Real-time inventory tracking</span>
-                            </li>
-                            <li class="flex items-center space-x-2">
-                                <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-                                </svg>
-                                <span class="text-sm text-muted-foreground">Competitive pricing strategies</span>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <!-- Technical Support -->
-                    <div class="feature-card text-left">
-                        <div class="feature-icon">
-                            <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/>
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
-                            </svg>
-                        </div>
-                        <h3>Technical Engineering Support</h3>
-                        <p>Expert engineering assistance for component integration, design optimization, and technical consulting.</p>
-                        <ul class="space-y-3 py-4">
-                            <li class="flex items-center space-x-2">
-                                <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-                                </svg>
-                                <span class="text-sm text-muted-foreground">Design review and optimization</span>
-                            </li>
-                            <li class="flex items-center space-x-2">
-                                <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-                                </svg>
-                                <span class="text-sm text-muted-foreground">Component compatibility analysis</span>
-                            </li>
-                            <li class="flex items-center space-x-2">
-                                <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-                                </svg>
-                                <span class="text-sm text-muted-foreground">Custom solution development</span>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <!-- Logistics -->
-                    <div class="feature-card text-left">
-                        <div class="feature-icon">
-                            <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path d="M9 17a2 2 0 11-4 0 2 2 0 014 0zM19 17a2 2 0 11-4 0 2 2 0 014 0z"/>
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1M5 17a2 2 0 104 0m-4 0a2 2 0 114 0m6 0a2 2 0 104 0m-4 0a2 2 0 114 0"/>
-                            </svg>
-                        </div>
-                        <h3>Logistics & Distribution</h3>
-                        <p>Efficient supply chain management with fast, reliable delivery across European markets.</p>
-                        <ul class="space-y-3 py-4">
-                            <li class="flex items-center space-x-2">
-                                <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-                                </svg>
-                                <span class="text-sm text-muted-foreground">Express delivery options</span>
-                            </li>
-                            <li class="flex items-center space-x-2">
-                                <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-                                </svg>
-                                <span class="text-sm text-muted-foreground">Just-in-time delivery</span>
-                            </li>
-                            <li class="flex items-center space-x-2">
-                                <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-                                </svg>
-                                <span class="text-sm text-muted-foreground">Real-time tracking</span>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <!-- Customer Support -->
-                    <div class="feature-card text-left">
-                        <div class="feature-icon">
-                            <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"/>
-                            </svg>
-                        </div>
-                        <h3>Customer Support Services</h3>
-                        <p>24/7 customer support with dedicated account management and technical assistance.</p>
-                        <ul class="space-y-3 py-4">
-                            <li class="flex items-center space-x-2">
-                                <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-                                </svg>
-                                <span class="text-sm text-muted-foreground">Dedicated account managers</span>
-                            </li>
-                            <li class="flex items-center space-x-2">
-                                <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-                                </svg>
-                                <span class="text-sm text-muted-foreground">Technical helpdesk support</span>
-                            </li>
-                            <li class="flex items-center space-x-2">
-                                <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-                                </svg>
-                                <span class="text-sm text-muted-foreground">Warranty handling</span>
-                            </li>
-                        </ul>
-                    </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">🔧</div>
+                    <h3>Technical Engineering Support</h3>
+                    <p>Expert engineering assistance for component integration, design optimization, and technical consulting.</p>
+                    <ul class="service-features">
+                        <li>Design review and optimization</li>
+                        <li>Component compatibility analysis</li>
+                        <li>Technical documentation</li>
+                        <li>Custom solution development</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">🚚</div>
+                    <h3>Logistics & Distribution</h3>
+                    <p>Efficient supply chain management with fast, reliable delivery across European markets.</p>
+                    <ul class="service-features">
+                        <li>Express delivery options</li>
+                        <li>Inventory management</li>
+                        <li>Just-in-time delivery</li>
+                        <li>Tracking and monitoring</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">🎧</div>
+                    <h3>Customer Support Services</h3>
+                    <p>24/7 customer support with dedicated account management and technical assistance.</p>
+                    <ul class="service-features">
+                        <li>Dedicated account managers</li>
+                        <li>Technical helpdesk support</li>
+                        <li>Order status tracking</li>
+                        <li>Returns and warranty handling</li>
+                    </ul>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Industry Expertise -->
-        <section class="py-20 bg-card">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="grid lg:grid-cols-2 gap-16 items-center">
-                    <div>
-                        <h2 class="text-3xl md:text-4xl font-bold gradient-text py-6">Industry Expertise</h2>
-                        <p class="text-lg text-muted-foreground py-4">
-                            Deep understanding of industry-specific requirements and standards across diverse market segments.
-                        </p>
-                        <ul class="space-y-6 py-6">
-                            <li>
-                                <div class="flex justify-between items-center py-2">
-                                    <span class="font-semibold text-foreground">Automotive</span>
-                                    <span class="text-sm text-primary font-medium">35%</span>
-                                </div>
-                                <p class="text-sm text-muted-foreground">Electric vehicles, infotainment, safety systems</p>
-                            </li>
-                            <li>
-                                <div class="flex justify-between items-center py-2">
-                                    <span class="font-semibold text-foreground">Consumer Electronics</span>
-                                    <span class="text-sm text-primary font-medium">25%</span>
-                                </div>
-                                <p class="text-sm text-muted-foreground">Smartphones, appliances, wearables</p>
-                            </li>
-                            <li>
-                                <div class="flex justify-between items-center py-2">
-                                    <span class="font-semibold text-foreground">Industrial Automation</span>
-                                    <span class="text-sm text-primary font-medium">20%</span>
-                                </div>
-                                <p class="text-sm text-muted-foreground">Manufacturing, robotics, control systems</p>
-                            </li>
-                            <li>
-                                <div class="flex justify-between items-center py-2">
-                                    <span class="font-semibold text-foreground">Telecommunications</span>
-                                    <span class="text-sm text-primary font-medium">15%</span>
-                                </div>
-                                <p class="text-sm text-muted-foreground">5G infrastructure, networking equipment</p>
-                            </li>
-                        </ul>
-                    </div>
-                    <div>
-                        <img src="images/services-illustration.jpg" alt="Services" class="rounded-2xl">
-                    </div>
+    <!-- Additional Services -->
+    <section class="section bg-muted">
+        <div class="container">
+            <div class="section-header">
+                <h2>Specialized <span class="gradient-text">Solutions</span></h2>
+                <p>Additional services designed to provide comprehensive support for specialized requirements and unique challenges.</p>
+            </div>
+            
+            <div class="additional-services">
+                <div class="additional-service">
+                    <div class="service-icon-small">🛡️</div>
+                    <h3>Quality Assurance</h3>
+                    <p>Rigorous testing and certification processes ensuring component reliability and performance standards.</p>
+                </div>
+                
+                <div class="additional-service">
+                    <div class="service-icon-small">⚡</div>
+                    <h3>Rapid Prototyping</h3>
+                    <p>Fast-track development support with component samples and prototype assembly services.</p>
+                </div>
+                
+                <div class="additional-service">
+                    <div class="service-icon-small">⏰</div>
+                    <h3>Emergency Supply</h3>
+                    <p>Expedited sourcing and delivery for critical components and urgent project requirements.</p>
+                </div>
+                
+                <div class="additional-service">
+                    <div class="service-icon-small">🌍</div>
+                    <h3>Global Partnerships</h3>
+                    <p>Access to worldwide manufacturer networks and exclusive distribution agreements.</p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- CTA Section -->
-        <section class="py-20 bg-background">
-            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                <h2 class="text-3xl md:text-4xl font-bold gradient-text py-6">Ready to Experience Professional Service Excellence?</h2>
-                <p class="text-lg text-muted-foreground py-8 max-w-2xl mx-auto">
-                    Connect with our expert team to discuss your requirements and discover how our comprehensive 
-                    services can accelerate your project success.
-                </p>
-                <div class="hero-buttons justify-center">
-                    <a href="contact.html" class="btn btn-primary btn-lg">Request Consultation</a>
-                    <a href="about.html" class="btn btn-outline btn-lg">Learn More</a>
+    <!-- Industry Focus -->
+    <section class="section">
+        <div class="container">
+            <div class="industry-grid">
+                <div class="industry-text">
+                    <h2>Industry <span class="gradient-text">Expertise</span></h2>
+                    <p>Deep understanding of industry-specific requirements and standards across diverse market segments.</p>
+                    
+                    <div class="industry-stats">
+                        <div class="stat-item">
+                            <span class="stat-label">Automotive</span>
+                            <div class="stat-bar">
+                                <div class="stat-fill" style="width: 35%"></div>
+                            </div>
+                            <span class="stat-value">35%</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Consumer Electronics</span>
+                            <div class="stat-bar">
+                                <div class="stat-fill" style="width: 25%"></div>
+                            </div>
+                            <span class="stat-value">25%</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Industrial Automation</span>
+                            <div class="stat-bar">
+                                <div class="stat-fill" style="width: 20%"></div>
+                            </div>
+                            <span class="stat-value">20%</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Telecommunications</span>
+                            <div class="stat-bar">
+                                <div class="stat-fill" style="width: 15%"></div>
+                            </div>
+                            <span class="stat-value">15%</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Healthcare</span>
+                            <div class="stat-bar">
+                                <div class="stat-fill" style="width: 5%"></div>
+                            </div>
+                            <span class="stat-value">5%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="industry-image">
+                    <img src="img/services-illustration.jpg" alt="Electronic Services" class="rounded-image">
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
+
+    <!-- Process Overview -->
+    <section class="section bg-muted">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our <span class="gradient-text">Service Process</span></h2>
+                <p>Streamlined workflow designed to deliver exceptional results efficiently and reliably.</p>
+            </div>
+            
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">01</div>
+                    <h3>Consultation</h3>
+                    <p>Understanding your requirements</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">02</div>
+                    <h3>Analysis</h3>
+                    <p>Technical feasibility assessment</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">03</div>
+                    <h3>Sourcing</h3>
+                    <p>Component identification & procurement</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">04</div>
+                    <h3>Quality Check</h3>
+                    <p>Rigorous testing & verification</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">05</div>
+                    <h3>Delivery</h3>
+                    <p>Timely delivery & support</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Experience Professional Service Excellence?</h2>
+            <p>Connect with our expert team to discuss your requirements and discover how our comprehensive services can accelerate your project success.</p>
+            <div class="cta-buttons">
+                <a href="contact.html" class="btn-primary">Request Service Consultation</a>
+                <a href="contact.html" class="btn-secondary">Download Service Brochure</a>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
-    <footer class="bg-card border-t border-border py-16">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 py-8">
-                <div class="lg:col-span-2">
-                    <div class="flex items-center space-x-3 py-4">
-                        <img src="images/ata-logo.png" alt="ATA Elektronik" class="h-10">
-                    </div>
-                    <p class="text-muted-foreground py-4">
-                        Leading German supplier of high-quality electronic components, serving industries across Europe with innovative solutions.
-                    </p>
-                    <div class="space-y-3">
-                        <div class="contact-item">
-                            <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
-                            </svg>
-                            <span>Berliner Str. 150, 42277 Wuppertal, Germany</span>
-                        </div>
-                        <div class="contact-item">
-                            <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
-                            </svg>
-                            <span>sales@ata-elektronik.de</span>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <h3 class="font-bold text-foreground py-4">Company</h3>
-                    <ul class="space-y-3">
-                        <li><a href="about.html" class="footer-link">About Us</a></li>
-                        <li><a href="services.html" class="footer-link">Services</a></li>
-                        <li><a href="contact.html" class="footer-link">Contact</a></li>
-                        <li><a href="faq.html" class="footer-link">FAQ</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="font-bold text-foreground py-4">Products</h3>
-                    <ul class="space-y-3">
-                        <li><a href="smartphones-wearables.html" class="footer-link">Smartphones</a></li>
-                        <li><a href="gaming-entertainment.html" class="footer-link">Gaming</a></li>
-                        <li><a href="smart-home.html" class="footer-link">Smart Home</a></li>
-                        <li><a href="laptops-computing.html" class="footer-link">Computing</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="font-bold text-foreground py-4">Support</h3>
-                    <ul class="space-y-3">
-                        <li><a href="privacy-policy.html" class="footer-link">Privacy Policy</a></li>
-                        <li><a href="terms-of-service.html" class="footer-link">Terms</a></li>
-                        <li><a href="cookie-policy.html" class="footer-link">Cookies</a></li>
-                    </ul>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <img src="img/ata-logo.png" alt="ATA Elektronik GmbH" class="footer-logo">
+                <p>Leading electronic components supplier across Europe</p>
+                <div class="contact-info">
+                    <p><strong>Address:</strong> Berliner Str. 150, 42277 Wuppertal, Germany</p>
+                    <p><strong>Phone:</strong> +49 152 192 115 12</p>
+                    <p><strong>Email:</strong> sales@ata-elektronik.de</p>
                 </div>
             </div>
-            <div class="border-t border-border py-8">
-                <p class="text-center text-muted-foreground text-sm">
-                    &copy; 2024 ATA Elektronik GmbH. All rights reserved.
-                </p>
+            
+            <div class="footer-section">
+                <h4>Company</h4>
+                <ul class="footer-links">
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Products</h4>
+                <ul class="footer-links">
+                    <li><a href="smartphones-wearables.html">Smartphones & Wearables</a></li>
+                    <li><a href="gaming-entertainment.html">Gaming & Entertainment</a></li>
+                    <li><a href="smart-home.html">Smart Home</a></li>
+                    <li><a href="audio-accessories.html">Audio & Accessories</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Support</h4>
+                <ul class="footer-links">
+                    <li><a href="payment-methods.html">Payment Methods</a></li>
+                    <li><a href="collection-agents.html">Collection Agents</a></li>
+                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                    <li><a href="terms-of-service.html">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 ATA Elektronik GmbH. All rights reserved.</p>
+            <div class="footer-bottom-links">
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="terms-of-service.html">Terms of Service</a>
+                <a href="cookie-policy.html">Cookie Policy</a>
             </div>
         </div>
     </footer>
